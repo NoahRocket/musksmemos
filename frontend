@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musk's Memos</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid #ffffff;
+            padding: 40px 20px;
+            border-radius: 8px;
+        }
+
+        /* Title */
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 2.5em;
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Subtitle */
+        h2 {
+            font-size: 1.2em;
+            color: #FF862C;
+            margin-bottom: 20px;
+        }
+
+        /* Description */
+        p {
+            font-size: 1em;
+            color: #cccccc;
+            line-height: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Divider */
+        .divider {
+            border: none;
+            height: 1px;
+            background-color: #333333;
+            margin: 30px 0;
+        }
+
+        /* Image */
+        .book-cover {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        /* Price and Button Centering */
+        .price {
+            font-size: 1.5em;
+            color: #FF862C;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Button */
+        .buy-button {
+            background-color: #FF862C;
+            color: #ffffff;
+            font-size: 1em;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #d9731f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Scale down title on small screens */
+            }
+            h2 {
+                font-size: 1.1em; /* Adjust subtitle size */
+            }
+            .price {
+                font-size: 1.3em; /* Slightly smaller price text */
+            }
+            .container {
+                padding: 30px 15px; /* Less padding for smaller screens */
+            }
+            p {
+                font-size: 0.9em; /* Make description slightly smaller */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Musk's Memos</h1>
+        <h2>The Leaked Emails That Built an Empire</h2>
+        <p>"Musk's Memos" unveils a curated selection of emails, internal memos, and candid notes, believed to be leaked from one of the most innovative empires of our time. Dive deep into the mind behind the breakthroughs and discover the hard truths, unconventional strategies, and relentless pursuit of excellence that transformed industries.</p>
+
+        <!-- Divider Line -->
+        <hr class="divider">
+
+        <!-- Book Cover Image -->
+        <img src="Book Cover_Background.jpg" alt="Book Cover" class="book-cover">
+
+        <!-- Price -->
+        <div class="price">$9.99</div>
+
+        <!-- Buy Button -->
+        <a href="#" class="buy-button" onclick="buyNow()">Get it on Kindle</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function buyNow() {
+            // Redirect to Kindle Shop (replace '#' with actual link)
+            window.location.href = '#';
+        }
+    </script>
+
+</body>
+</html>
