@@ -84,9 +84,7 @@
         }
 
         /* Button */
-        .buy-button {
-            background-color: #FF862C;
-            color: #ffffff;
+        .buy-button, .apple-button {
             font-size: 1em;
             padding: 12px 24px;
             border: none;
@@ -94,10 +92,35 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        .buy-button {
+            background-color: #FF862C;
+            color: #ffffff;
         }
 
         .buy-button:hover {
             background-color: #d9731f;
+        }
+
+        .apple-button {
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .apple-button img {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        .apple-button:hover {
+            background-color: #e6e6e6;
         }
 
         /* Responsive Design */
@@ -137,15 +160,23 @@
         <!-- Price -->
         <div class="price">$9.99</div>
 
-        <!-- Buy Button -->
+        <!-- Buy Buttons -->
         <a href="#" class="buy-button" onclick="buyNow()">Get it on Kindle</a>
+        <a href="#" class="apple-button" onclick="buyOnApple()">
+            <img src="apple-logo.png" alt="Apple Logo"> Get on Apple Books
+        </a>
     </div>
 
     <!-- JavaScript -->
     <script>
         function buyNow() {
             // Redirect to Kindle Shop (replace '#' with actual link)
-            window.location.href = 'https://www.amazon.com/Musks-Memos-Leaked-Emails-Empire-ebook/dp/B0DLVFM9HF/ref=sr_1_1?crid=1DYVCILDZT2YO&dib=eyJ2IjoiMSJ9.HABFVCkzGEW0hJhvmyF5jw.UITfVRxYGTG9o_wnDpTNcQUr0WumdFRiuAzcZu7QciQ&dib_tag=se&keywords=musks+memos&qid=1730712555&s=digital-text&sprefix=musks+memo%2Cdigital-text%2C223&sr=1-1';
+            window.location.href = 'https://www.amazon.com/dp/B0DLVFM9HF?ref_=pe_93986420_775043100&dplnkId=49cd937f-4194-4710-980a-3faa30cb4f59&nodl=1';
+        }
+
+        function buyOnApple() {
+            // Redirect to Apple Books (replace '#' with actual link)
+            window.location.href = 'https://books.apple.com/us/book/musks-memos/id6737858534?ls=1';
         }
     </script>
 
